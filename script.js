@@ -9,20 +9,6 @@ function limparInputsVisiveis() {
   passwordInput.value = "";
 }
 
-async function enviarDados(username, email, password) {
-  await fetch("http://127.0.0.1:5000/enviar", {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-    },
-    body: JSON.stringify({
-      username: username,
-      email: email,
-      password: password,
-    }),
-  });
-}
-
 function ValidarDados() {
 
     const username = usernameInput.value.trim()
