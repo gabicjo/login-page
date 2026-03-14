@@ -48,7 +48,6 @@ function ValidarDados() {
     }
 
     if (temErro == false) {
-        enviarDados(username, email, password);
         limparInputsVisiveis()
         alert("Seus dados foram enviados");
         for (let i = 0; i <= placeholder.length; i++) {
